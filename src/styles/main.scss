@@ -1,0 +1,10 @@
+@import './components/componentA';
+@import './components/componentB';
+
+div {
+  background: linear-gradient(to bottom, #FFFFFF, #000000);
+  color: #FF00FF;
+  display: grid;
+  transition: all 0.5s;
+  user-select: none;
+}
