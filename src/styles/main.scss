@@ -1,10 +1,69 @@
-@import './components/componentA';
-@import './components/componentB';
+@import './reset';
+@import './colors';
+@import './variables';
+@import './grid';
 
-div {
-  background: linear-gradient(to bottom, #FFFFFF, #000000);
-  color: #FF00FF;
-  display: grid;
-  transition: all 0.5s;
-  user-select: none;
+.single-products-catagory {
+  a {
+    display: block;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+
+    &::before {
+      background-color: #FBB710;
+      content: '';
+      height: 3px;
+      left: 40px;
+      position: absolute;
+      top: 30px;
+      width: 80px;
+      z-index: 10;
+    }
+
+    &::after {
+      background-color: rgba(60, 60, 60, 0.7);
+      content: '';
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      transition-duration: 250ms;
+      visibility: visible;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .hover-content {
+    color: #6D6D6D;
+    left: 40px;
+    position: absolute;
+    top: 40px;
+    transition-duration: 250ms;
+    z-index: 10;
+
+    p {
+      font-size: 16px;
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+  }
+
+  &:focus,
+  &:hover {
+    a::after {
+      opacity: 1;
+    }
+
+    .hover-content {
+      color: #FFFFFF;
+    }
+  }
 }

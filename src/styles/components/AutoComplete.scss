@@ -1,0 +1,30 @@
+.autocomplete {
+  label {
+    display: block;
+    font-size: 1.25em;
+    margin-bottom: 0.75em;
+  }
+
+  input {
+    border: 1px solid #CBD3DD;
+    font-size: 1.13em;
+    height: 40px;
+    padding: 0 15px;
+    width: 100%;
+  }
+}
+
+.autocomplete-suggestions {
+  background: #FFFFFF;
+  border: 1px solid #CBD3DD;
+  list-style-type: none;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+
+  .autocomplete-suggestion {
+    overflow: hidden;
+    padding: 5px 15px;
+    white-space: nowrap;
+  }
+}
