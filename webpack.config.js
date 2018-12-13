@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
-  entry: { main: './src/scripts/index.js'},
+  entry: { main: './src/scripts/index.jsx'},
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js'

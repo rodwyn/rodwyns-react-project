@@ -434,10 +434,6 @@
     "wrap-regex": "warn",
 
     //ECMAScript 6
-    "arrow-body-style": [
-      "warn",
-      "as-needed"
-    ],
     "arrow-parens": [
       "warn",
       "as-needed"
