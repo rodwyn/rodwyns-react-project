@@ -2,8 +2,13 @@
 @import './colors';
 @import './variables';
 @import './grid';
+@import './fonts';
 @import './components/SingleProduct';
 @import './components/Header';
+
+body {
+  font-family: $font-family-primary;
+}
 
 .main-content-wrapper {
   display: grid;

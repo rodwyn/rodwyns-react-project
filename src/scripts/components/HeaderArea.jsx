@@ -5,7 +5,10 @@ class HeaderArea extends React.Component {
   render() {
     return (
       <header className="header-area">
-        <div className="logo">Furniture</div>
+        <div className="logo">
+          Furniture
+          <span>store</span>
+        </div>
         <NavList />
       </header>
     );

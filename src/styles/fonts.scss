@@ -1,0 +1,32 @@
+@font-face {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: $font-weight-light;
+  src: url('../fonts/RobotoCondensed-Light.eot');
+  src: url('../fonts/RobotoCondensed-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/RobotoCondensed-Light.woff2') format('woff2'),
+    url('../fonts/RobotoCondensed-Light.woff') format('woff'),
+    url('../fonts/RobotoCondensed-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  src: url('../fonts/RobotoCondensed-Regular.eot');
+  src: url('../fonts/RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/RobotoCondensed-Regular.woff2') format('woff2'),
+    url('../fonts/RobotoCondensed-Regular.woff') format('woff'),
+    url('../fonts/RobotoCondensed-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  src: url('../fonts/RobotoCondensed-Bold.eot');
+  src: url('../fonts/RobotoCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/RobotoCondensed-Bold.woff2') format('woff2'),
+    url('../fonts/RobotoCondensed-Bold.woff') format('woff'),
+    url('../fonts/RobotoCondensed-Bold.ttf') format('truetype');
+}
