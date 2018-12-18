@@ -13,10 +13,11 @@ $font-family-icon: 'icomoon';
 $font-size-base: 12px;
 $font-size-md: 16px;
 $font-size-lg: 18px;
-$font-size-xl: 20px;
+$font-size-xl: 24px;
 $font-weight-light: 100;
 $font-weight-regular: 400;
 $font-weight-bold: 700;
+$font-color-secondary: $white;
 
 //Grid
 $grid-columns: 12;
@@ -51,3 +52,22 @@ $border-style-dashed: dashed;
 //Count
 $count-font-size: 40px;
 $count-line-height: 47px;
+
+//box-shadow
+$box-shadow-settings: '0 2px 6px 0 rgba(0, 0, 0, 0.3)';
+
+//Scroll Button
+$scroll-button-size: 40px;
+$scroll-button-position: 60px;
+
+// Single Product
+$single-product-line: #FBB710;
+$single-product-height: 3px;
+$single-product-width: 80px;
+
+// z-index
+$z-index-sm: 1;
+$z-index-md: 10;
+$z-index-lg: 100;
+$z-index-xl: 1000;
+$z-index-no: -1;

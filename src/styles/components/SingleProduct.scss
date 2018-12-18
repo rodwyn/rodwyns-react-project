@@ -3,17 +3,17 @@
     display: block;
     position: relative;
     width: 100%;
-    z-index: 10;
+    z-index: $z-index-md;
 
     &::before {
-      background-color: #FBB710;
+      background-color: $single-product-line;
       content: '';
-      height: 3px;
+      height: $single-product-height;
       left: 40px;
       position: absolute;
       top: 30px;
-      width: 80px;
-      z-index: 10;
+      width: $single-product-width;
+      z-index: $z-index-md;
     }
 
     &::after {
@@ -27,7 +27,7 @@
       transition-duration: 250ms;
       visibility: visible;
       width: 100%;
-      z-index: 1;
+      z-index: $z-index-sm;
     }
   }
 
@@ -41,7 +41,7 @@
     position: absolute;
     top: 40px;
     transition-duration: 250ms;
-    z-index: 10;
+    z-index: $z-index-md;
 
     p {
       font-size: 16px;
