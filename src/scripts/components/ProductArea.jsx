@@ -88,7 +88,7 @@ class ProductArea extends React.Component {
     });
 
     const container = React.createElement(
-      'div', { className: 'container' }, [containerChildren]
+      'div', { className: 'container page' }, [containerChildren]
     );
 
     return (

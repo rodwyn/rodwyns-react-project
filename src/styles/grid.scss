@@ -16,7 +16,7 @@
     }
   }
 
-  @media (min-width: $media-breakpoint-sm) {
+  @media (min-width: $media-breakpoint-sm-up) {
     @for $i from 1 through $columns {
       .col-sm-#{$i} {
         grid-column: span $i;
@@ -24,7 +24,7 @@
     }
   }
 
-  @media (min-width: $media-breakpoint-md) {
+  @media (min-width: $media-breakpoint-md-up) {
     @for $i from 1 through $columns {
       .col-md-#{$i} {
         grid-column: span $i;
@@ -32,7 +32,7 @@
     }
   }
 
-  @media (min-width: $media-breakpoint-lg) {
+  @media (min-width: $media-breakpoint-lg-up) {
     @for $i from 1 through $columns {
       .col-lg-#{$i} {
         grid-column: span $i;
@@ -40,7 +40,7 @@
     }
   }
 
-  @media (min-width: $media-breakpoint-xl) {
+  @media (min-width: $media-breakpoint-xl-up) {
     @for $i from 1 through $columns {
       .col-xl-#{$i} {
         grid-column: span $i;

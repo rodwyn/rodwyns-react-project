@@ -1,33 +1,25 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 class NavbarToggle extends React.Component {
-  constructor() {
-    super();
-
-    this.state = { active: false };
-    this.onClick = this.onClick.bind(this);
-  }
-
-  onClick() {
-    this.setState({ active: !this.state.active });
-  }
-
   render() {
-    const toggleClass = (this.state.active) ? 'active' : '';
-
     return (
       <div className="navbar-toggle-wrapper">
         <div
-          className={ `navbar-toggle ${ toggleClass }` }
-          onClick={ this.onClick }>
+          className={ `navbar-toggle ${ this.props.toggleClass }` }
+          onClick={ () => this.props.handleOnClick() }>
           <span />
           <span />
           <span />
         </div>
       </div>
-
     );
   }
 }
+
+NavbarToggle.propTypes = {
+  handleOnClick: PropTypes.func.isRequired,
+  toggleClass: PropTypes.string.isRequired
+};
 
 export default NavbarToggle;

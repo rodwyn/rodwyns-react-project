@@ -10,9 +10,18 @@ body {
   font-family: $font-family-primary;
 }
 
+.page {
+  @media (max-width: $media-breakpoint-lg-down) {
+    padding-top: 44px;
+  }
+}
+
 .main-content-wrapper {
   display: grid;
-  // grid-template-columns: 320px 1fr;
+
+  @media (min-width: $media-breakpoint-lg-up) {
+    grid-template-columns: 320px 1fr;
+  }
 }
 
 img {

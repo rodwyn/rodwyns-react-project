@@ -35,10 +35,15 @@ $space-xxl: 28px;
 $space-xxxl: 32px;
 
 //Breakpoints
-$media-breakpoint-sm: 576px;
-$media-breakpoint-md: 768px;
-$media-breakpoint-lg: 992px;
-$media-breakpoint-xl: 1200px;
+$media-breakpoint-sm-up: 576px;
+$media-breakpoint-md-up: 768px;
+$media-breakpoint-lg-up: 992px;
+$media-breakpoint-xl-up: 1200px;
+
+$media-breakpoint-sm-down: 575px;
+$media-breakpoint-md-down: 767px;
+$media-breakpoint-lg-down: 991px;
+$media-breakpoint-xl-down: 1199px;
 
 // Borders
 $border-sm: 1px;
@@ -54,7 +59,7 @@ $count-font-size: 40px;
 $count-line-height: 47px;
 
 //box-shadow
-$box-shadow-settings: '0 2px 6px 0 rgba(0, 0, 0, 0.3)';
+$box-shadow-settings: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
 
 //Scroll Button
 $scroll-button-size: 40px;
@@ -71,3 +76,6 @@ $z-index-md: 10;
 $z-index-lg: 100;
 $z-index-xl: 1000;
 $z-index-no: -1;
+
+// transition
+$transition-settings: 0.6s ease;
