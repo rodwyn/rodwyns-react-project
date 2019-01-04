@@ -1,22 +1,34 @@
 export const Menu = [
   {
     label: 'home',
-    link: '#'
+    link: '/'
   },
   {
     label: 'shop',
-    link: '#'
+    link: '/shop'
   },
   {
     label: 'product',
-    link: '#'
+    link: '/product'
   },
   {
     label: 'cart',
-    link: '#'
+    link: '/cart'
   },
   {
     label: 'checkout',
-    link: '#'
+    link: '/checkout'
+  },
+  {
+    label: 'first',
+    link: '/first'
+  },
+  {
+    label: 'second',
+    link: '/second'
+  },
+  {
+    label: 'third',
+    link: '/third'
   }
 ];
