@@ -1,0 +1,33 @@
+.newsletter-form {
+  form {
+    position: relative;
+    z-index: $z-index-sm;
+
+    input {
+      font-size: 14px;
+
+      &[type='email'] {
+        background-color: $white;
+        border: none;
+        color: #AFAFAF;
+        height: 50px;
+        padding: 0 120px 0 20px;
+        width: 100%;
+      }
+
+      &[type='submit'] {
+        background-color: $brand-primary-color;
+        border: none;
+        color: $white;
+        cursor: pointer;
+        height: 50px;
+        padding: 0 30px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 120px;
+        z-index: $z-index-md;
+      }
+    }
+  }
+}

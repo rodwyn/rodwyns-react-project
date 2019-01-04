@@ -5,6 +5,8 @@
 @import './fonts';
 @import './components/SingleProduct';
 @import './components/Header';
+@import './components/NewsletterForm';
+@import './components/ScrollUp';
 
 body {
   font-family: $font-family-primary;
@@ -13,6 +15,27 @@ body {
 .page {
   @media (max-width: $media-breakpoint-lg-down) {
     padding-top: 44px;
+  }
+}
+
+.newsletter-area {
+  background-color: #3C3C3C;
+  padding: 50px;
+  position: relative;
+
+  h2 {
+    color: $white;
+    font-size: 36px;
+    font-weight: $font-weight-bold;
+    margin-bottom: 10px;
+
+    span {
+      color: $brand-primary-color;
+    }
+  }
+
+  p {
+    color: $gray-5;
   }
 }
 
@@ -27,22 +50,4 @@ body {
 img {
   height: auto;
   max-width: 100%;
-}
-
-#scrollUp {
-  background-color: $brand-primary-color;
-  bottom: $scroll-button-position;
-  box-shadow: $box-shadow-settings;
-  color: $font-color-secondary;
-  cursor: pointer;
-  font-size: $font-size-xl;
-  height: $scroll-button-size;
-  line-height: $scroll-button-size;
-  position: fixed;
-  right: $scroll-button-position;
-  text-align: center;
-  transition-duration: 500ms;
-  visibility: hidden;
-  width: $scroll-button-size;
-  z-index: $z-index-xl;
 }

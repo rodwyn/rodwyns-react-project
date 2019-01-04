@@ -1,5 +1,6 @@
 import HeaderArea from './components/HeaderArea.jsx';
 import NavbarToggle from './components/NavbarToggle.jsx';
+import NewsletterForm from './components/NewsletterForm.jsx';
 import ProductArea from './components/ProductArea.jsx';
 import React from 'react';
 import ScrollUp from './components/ScrollUp.jsx';
@@ -21,19 +22,34 @@ class App extends React.Component {
     const headerClass = (this.state.active) ? 'active' : '';
 
     return (
-      <div className="main-content-wrapper">
-        <div className="mobile-nav">
-          <a className="logo" href="#">
-            Furniture
-            <span>store</span>
-          </a>
-          <NavbarToggle
-            handleOnClick={ this.handleOnClick }
-            toggleClass={ toggleClass } />
+      <div>
+        <div className="main-content-wrapper">
+          <div className="mobile-nav">
+            <a className="logo" href="#">
+              Furniture
+              <span>store</span>
+            </a>
+            <NavbarToggle
+              handleOnClick={ this.handleOnClick }
+              toggleClass={ toggleClass } />
+          </div>
+          <HeaderArea headerClass={ headerClass } />
+          <ProductArea />
+          <ScrollUp />
         </div>
-        <HeaderArea headerClass={ headerClass } />
-        <ProductArea />
-        <ScrollUp />
+        <div className="newsletter-area container">
+          <div className="col-12 col-md-6 col-lg-7">
+            <h2>Subscribe for a <span>25% Discount</span></h2>
+            <p>
+              Nulla ac convallis lorem, eget euismod nisl. Donec in libero sit
+              amet mi vulputate consectetur. Donec auctor interdum purus, ac
+              finibus massa bibendum nec.
+            </p>
+          </div>
+          <div className="col-12 col-md-6 col-lg-5">
+            <NewsletterForm />
+          </div>
+        </div>
       </div>
     );
   }

@@ -1,0 +1,17 @@
+#scrollUp {
+  background-color: $brand-primary-color;
+  bottom: $scroll-button-position;
+  box-shadow: $box-shadow-settings;
+  color: $font-color-secondary;
+  cursor: pointer;
+  font-size: $font-size-xl;
+  height: $scroll-button-size;
+  line-height: $scroll-button-size;
+  position: fixed;
+  right: $scroll-button-position;
+  text-align: center;
+  transition-duration: 500ms;
+  visibility: hidden;
+  width: $scroll-button-size;
+  z-index: $z-index-xl;
+}
