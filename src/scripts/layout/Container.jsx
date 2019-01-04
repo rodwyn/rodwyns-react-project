@@ -8,6 +8,7 @@ import {
   withRouter
 } from 'react-router-dom';
 import ProductArea from '../components/ProductArea.jsx';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 const Container = ({ location }) => (
@@ -32,8 +33,6 @@ const Container = ({ location }) => (
   </div>
 );
 
-Container.propTypes = { location: PropTypes.string };
-
-Container.defaultProps = { location: '' };
+Container.propTypes = { location: PropTypes.object.isRequired };
 
 export default withRouter(Container);
