@@ -17,6 +17,8 @@ class HeaderArea extends React.Component {
   }
 }
 
-HeaderArea.propTypes = { headerClass: PropTypes.string.isRequired };
+HeaderArea.propTypes = { headerClass: PropTypes.string };
+
+HeaderArea.defaultProps = { headerClass: '' };
 
 export default HeaderArea;
