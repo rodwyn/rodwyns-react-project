@@ -18,17 +18,5 @@ export const Menu = [
   {
     label: 'checkout',
     link: '/checkout'
-  },
-  {
-    label: 'first',
-    link: '/first'
-  },
-  {
-    label: 'second',
-    link: '/second'
-  },
-  {
-    label: 'third',
-    link: '/third'
   }
 ];

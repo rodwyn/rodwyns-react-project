@@ -13,8 +13,9 @@ import React from 'react';
 
 const Container = ({ location }) => (
   <div>
-    <TransitionGroup>
+    <TransitionGroup className="transition-group">
       <CSSTransition
+        classNames="fade"
         key={ location.key }
         timeout={
           {
@@ -22,12 +23,11 @@ const Container = ({ location }) => (
             exit: 300
           }
         } >
-        <Switch location={ location }>
-          <Route component={ ProductArea } exact path="/" />
-          <Route component={ () => <div>Firts Page</div> } path="/first" />
-          <Route component={ () => <div>Second Page</div> } path="/second" />
-          <Route component={ () => <div>Third Page</div> } path="/third" />
-        </Switch>
+        <section className="route-section">
+          <Switch location={ location }>
+            <Route component={ ProductArea } exact path="/" />
+          </Switch>
+        </section>
       </CSSTransition>
     </TransitionGroup>
   </div>
