@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import NavList from './NavList.jsx';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -7,10 +8,10 @@ class HeaderArea extends React.Component {
     return (
       <header
         className={ `header-area ${ this.props.headerClass }` }>
-        <a className="logo" href="#">
+        <Link className="logo" to="/">
           Furniture
           <span>store</span>
-        </a>
+        </Link>
         <NavList />
       </header>
     );
