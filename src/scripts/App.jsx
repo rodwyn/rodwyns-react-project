@@ -1,3 +1,4 @@
+import createBrowserHistory from "history/createBrowserHistory";
 import Container from './layout/Container.jsx';
 import HeaderArea from './layout/HeaderArea.jsx';
 import NavbarToggle from './components/NavbarToggle.jsx';
@@ -5,6 +6,7 @@ import NewsletterForm from './components/NewsletterForm.jsx';
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import ScrollUp from './components/ScrollUp.jsx';
+
 
 class App extends React.Component {
   constructor() {
@@ -19,11 +21,12 @@ class App extends React.Component {
   }
 
   render() {
+    const customHistory = createBrowserHistory();
     const toggleClass = (this.state.active) ? 'active' : '';
     const headerClass = (this.state.active) ? 'active' : '';
 
     return (
-      <Router>
+      <Router history={customHistory} >
         <div>
           <div className="main-content-wrapper">
             <div className="mobile-nav">

@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 const SingleProduct = ({ product }) => {
   const {
-    link,
+    id,
     imgSrc,
     price,
     description
@@ -11,13 +12,13 @@ const SingleProduct = ({ product }) => {
 
   return (
     <div className="single-products-catagory">
-      <a href={ link }>
+      <Link to={ `/product/${ id }` }>
         <img src={ imgSrc } />
         <div className="hover-content">
           <p>From ${price}</p>
-          <h4>{description}</h4>
+          <h4>{ description }</h4>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };

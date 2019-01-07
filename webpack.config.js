@@ -7,7 +7,8 @@ module.exports = {
   entry: { main: './src/scripts/index.jsx'},
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js'
+    filename: 'main.js',
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -38,6 +39,9 @@ module.exports = {
         })
       }
     ]
+  },
+  devServer: {
+    historyApiFallback: true
   },
   plugins: [
     new ExtractTextPlugin({
