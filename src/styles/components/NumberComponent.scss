@@ -1,0 +1,49 @@
+.number-component {
+  display: flex;
+
+  p {
+    background-color: #F5F7FA;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+  }
+
+  .quantity {
+    position: relative;
+    z-index: $z-index-sm;
+
+    span {
+      color: #959595;
+      cursor: pointer;
+      height: 20px;
+      line-height: 1;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      width: 20px;
+
+      &.minus {
+        bottom: 0;
+      }
+
+      &.plus {
+        top: 0;
+      }
+    }
+
+    input {
+      appearance: textfield;
+      background-color: #F5F7FA;
+      border: none;
+      color: #959595;
+      height: 40px;
+      padding: 0;
+      text-align: center;
+      width: 100px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
