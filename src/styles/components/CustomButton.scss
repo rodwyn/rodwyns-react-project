@@ -1,0 +1,27 @@
+button[class^='btn-'],
+button[class*=' btn-'] {
+  border: none;
+  border-radius: 0;
+  color: $white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: $font-weight-regular;
+  height: 55px;
+  line-height: 56px;
+  min-width: 160px;
+  padding: 0 7px;
+
+  &:disabled {
+    background-color: #000000;
+    cursor: not-allowed;
+  }
+}
+
+.btn-default {
+  background-color: #FBB710;
+
+  &:hover {
+    background-color: #000000;
+    transition: all 500ms ease 0s;
+  }
+}
