@@ -1,0 +1,37 @@
+.product-meta-data {
+  padding: 25px 0;
+  position: relative;
+
+  &::before {
+    background-color: #FBB710;
+    content: '';
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 18px;
+    width: 80px;
+    z-index: 10;
+  }
+
+  h6 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .ratings {
+    margin-bottom: 16px;
+  }
+}
+
+.short-overview,
+.number-component {
+  margin-bottom: 48px;
+}
+
+.product-price {
+  color: #FBB710;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 10px;
+}

@@ -17,7 +17,7 @@ const CustomRaiting = ({ rate }) => {
     return stars;
   }
 
-  return(
+  return (
     <div className="ratings">
       { getStarts() }
     </div>
