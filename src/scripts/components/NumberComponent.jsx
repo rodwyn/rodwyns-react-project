@@ -37,7 +37,7 @@ class NumberComponent extends React.Component {
         <p>Qty</p>
         <div className="quantity">
           <span className="minus" onClick={ this.onMinus }>
-            <i aria-hidden="true" className="fa fa-caret-down">m</i>
+            <i aria-hidden="true" className="fa-arrow-down" />
           </span>
           <input
             max={ this.props.settings.max }
@@ -48,7 +48,7 @@ class NumberComponent extends React.Component {
             type="number"
             value={ this.state.value } />
           <span className="plus" onClick={ this.onPlus }>
-            <i aria-hidden="true" className="fa fa-caret-up">p</i>
+            <i aria-hidden="true" className="fa-arrow-up" />
           </span>
         </div>
       </div>
