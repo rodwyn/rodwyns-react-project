@@ -1,0 +1,29 @@
+[class^='fa-'],
+[class*=' fa-'] {
+  display: inline-block;
+  font-family: $font-family-icon;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+.fa-star::before {
+  content: '\f005';
+  font-weight: $font-weight-regular;
+}
+
+.fa-star-fill::before {
+  content: '\f005';
+  font-weight: $font-weight-bold;
+}
+
+.fa-arrow-up::before {
+  content: '\f106';
+  font-weight: $font-weight-bold;
+}
+
+.fa-arrow-down::before {
+  content: '\f107';
+  font-weight: $font-weight-bold;
+}

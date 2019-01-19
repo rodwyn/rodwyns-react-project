@@ -30,3 +30,36 @@
     url('../fonts/RobotoCondensed-Bold.woff') format('woff'),
     url('../fonts/RobotoCondensed-Bold.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: $font-family-icon;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  src: url('../fonts/fa-solid-700.eot');
+  src: url('../fonts/fa-solid-700.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/fa-solid-700.woff2') format('woff2'),
+    url('../fonts/fa-solid-700.woff') format('woff'),
+    url('../fonts/fa-solid-700.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $font-family-icon;
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  src: url('../fonts/fa-regular-400.eot');
+  src: url('../fonts/fa-regular-400.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/fa-regular-400.woff2') format('woff2'),
+    url('../fonts/fa-regular-400.woff') format('woff'),
+    url('../fonts/fa-regular-400.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: $font-family-icon;
+  font-style: normal;
+  font-weight: $font-weight-light;
+  src: url('../fonts/fa-brands-100.eot');
+  src: url('../fonts/fa-brands-100.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/fa-brands-100.woff2') format('woff2'),
+    url('../fonts/fa-brands-100.woff') format('woff'),
+    url('../fonts/fa-brands-100.ttf') format('truetype');
+}

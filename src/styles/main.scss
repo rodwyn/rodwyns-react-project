@@ -3,11 +3,18 @@
 @import './variables';
 @import './grid';
 @import './fonts';
+@import './icons';
 @import './components/SingleProduct';
 @import './components/Header';
 @import './components/NewsletterForm';
 @import './components/ScrollUp';
 @import './components/Container';
+@import './components/NumberComponent';
+@import './components/CustomButton';
+@import './components/ProductDetail';
+@import './components/Headings';
+@import './components/CustomRating';
+@import './components/CustomBadge';
 
 body {
   font-family: $font-family-primary;

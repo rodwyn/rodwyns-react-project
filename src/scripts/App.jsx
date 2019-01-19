@@ -1,9 +1,10 @@
 import Container from './layout/Container.jsx';
 import HeaderArea from './layout/HeaderArea.jsx';
+import history from './layout/history.jsx';
 import NavbarToggle from './components/NavbarToggle.jsx';
 import NewsletterForm from './components/NewsletterForm.jsx';
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Router } from 'react-router-dom';
 import ScrollUp from './components/ScrollUp.jsx';
 
 class App extends React.Component {
@@ -23,7 +24,7 @@ class App extends React.Component {
     const headerClass = (this.state.active) ? 'active' : '';
 
     return (
-      <Router>
+      <Router history={ history } >
         <div>
           <div className="main-content-wrapper">
             <div className="mobile-nav">

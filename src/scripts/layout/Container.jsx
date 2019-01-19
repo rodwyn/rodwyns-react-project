@@ -8,6 +8,7 @@ import {
   withRouter
 } from 'react-router-dom';
 import ProductArea from '../components/ProductArea.jsx';
+import ProductDetail from '../components/ProductDetail.jsx';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -26,6 +27,7 @@ const Container = ({ location }) => (
         <section className="route-section">
           <Switch location={ location }>
             <Route component={ ProductArea } exact path="/" />
+            <Route component={ ProductDetail } path="/product/:id" />
           </Switch>
         </section>
       </CSSTransition>
