@@ -1,0 +1,26 @@
+.cart-summary {
+  background-color: $cart-summary-bg-color;
+  padding: $space-xxl $space-lg;
+
+  button {
+    margin-top: $space-xxxl + $space-md;
+  }
+}
+
+.summary-table {
+  margin-top: $space-xl;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $space-xl;
+
+    span {
+      flex-grow: 1;
+
+      &:last-of-type {
+        text-align: right;
+      }
+    }
+  }
+}
