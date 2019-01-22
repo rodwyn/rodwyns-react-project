@@ -24,3 +24,17 @@
     }
   }
 }
+
+.cart-table-row {
+  div[class^='col-'],
+  div[class*=' col'] {
+    align-self: center;
+
+    @media screen and (max-width: $media-breakpoint-sm-down) {
+      &:first-of-type {
+        background-color: #FFCC33;
+        grid-row: 1 / 4;
+      }
+    }
+  }
+}
