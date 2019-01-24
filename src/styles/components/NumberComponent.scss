@@ -9,6 +9,7 @@
   }
 
   .quantity {
+    flex: 1;
     position: relative;
     z-index: $z-index-sm;
 
@@ -42,7 +43,7 @@
       height: 40px;
       padding: 0;
       text-align: center;
-      width: 100px;
+      width: 100%;
 
       &:focus {
         outline: none;
