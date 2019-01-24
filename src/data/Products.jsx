@@ -2,15 +2,14 @@ export const Products = [{
   description: 'Modern Chair',
   id: 1,
   imgSrc: '../../images/product/1.jpg',
-  price: '180',
+  price: '280',
   rate: 2,
-  stock: 0,
-  thumbnail: "https://colorlib.com/preview/theme/amado/img/bg-img/cart1.jpg"
+  stock: 0
 }, {
   description: 'Minimalistic Plant Pot',
   id: 2,
   imgSrc: '../../images/product/2.jpg',
-  price: '180',
+  price: '80',
   rate: 1,
   stock: 8
 }, {
