@@ -26,6 +26,8 @@
 }
 
 .cart-table-row {
+  margin-bottom: $space-sm;
+
   div[class^='col-'],
   div[class*=' col'] {
     align-self: center;

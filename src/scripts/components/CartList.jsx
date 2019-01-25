@@ -17,7 +17,7 @@ const CartList = () => {
           </div>
           <div className="col-6 col-sm-2">${ product.price }</div>
           <div className="col-6 col-sm-4">
-            <NumberComponent settings={{ value: product.quantity }} />
+            <NumberComponent value={ product.quantity } />
           </div>
         </div>
       );
