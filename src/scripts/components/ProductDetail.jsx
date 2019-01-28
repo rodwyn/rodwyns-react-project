@@ -21,11 +21,11 @@ const ProductDetail = ({ match }) => {
   } = Products.find(getProduct(ID));
 
   return (
-    <div className="container-gap page">
-      <div className="col-12 col-lg-7">
+    <div className="container-gap page product-detail-view">
+      <div className="col-12 col-md-7">
         <img src={ imgSrc } />
       </div>
-      <div className="col-12 col-lg-5">
+      <div className="col-12 col-md-5">
         <div className="product-meta-data">
           <p className="product-price">${ price }</p>
           <h6>{ description }</h6>

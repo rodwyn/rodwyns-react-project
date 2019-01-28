@@ -1,3 +1,10 @@
+.product-detail-view {
+  .short-overview,
+  .number-component {
+    margin-bottom: 48px;
+  }
+}
+
 .product-meta-data {
   padding: 25px 0;
   position: relative;
@@ -21,11 +28,6 @@
   .ratings {
     margin-bottom: 16px;
   }
-}
-
-.short-overview,
-.number-component {
-  margin-bottom: 48px;
 }
 
 .product-price {

@@ -2,6 +2,7 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: { main: './src/scripts/index.jsx'},
@@ -21,13 +22,19 @@ module.exports = {
         ]
       },
       {
-        test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+        test: /\.(png|jpg|jpeg|gif)$/,
         use: [{
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: 'fonts/'
+            outputPath: 'images/'
           }
+        }]
+      },
+      {
+        test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+        use: [{
+          loader: 'file-loader'
         }]
       },
       {
@@ -53,6 +60,10 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html'
     }),
-    new StyleLintPlugin({})
+    new StyleLintPlugin({}),
+    new CopyWebpackPlugin([{
+      from: __dirname + '/src/images',
+      to: './images/'
+    }])
   ]
 };

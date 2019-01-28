@@ -1,0 +1,42 @@
+.cart-summary {
+  background-color: $cart-summary-bg-color;
+  padding: $space-xxl $space-lg;
+
+  button {
+    margin-top: $space-xxxl + $space-md;
+  }
+}
+
+.summary-table {
+  margin-top: $space-xl;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $space-xl;
+
+    span {
+      flex-grow: 1;
+
+      &:last-of-type {
+        text-align: right;
+      }
+    }
+  }
+}
+
+.cart-table-row {
+  margin-bottom: $space-sm;
+
+  div[class^='col-'],
+  div[class*=' col'] {
+    align-self: center;
+
+    @media screen and (max-width: $media-breakpoint-sm-down) {
+      &:first-of-type {
+        background-color: #FFCC33;
+        grid-row: 1 / 4;
+      }
+    }
+  }
+}
