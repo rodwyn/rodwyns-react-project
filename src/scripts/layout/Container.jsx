@@ -8,6 +8,7 @@ import {
   withRouter
 } from 'react-router-dom';
 import CartView from '../components/CartView.jsx';
+import CheckoutView from '../components/CheckoutView.jsx';
 import ProductArea from '../components/ProductArea.jsx';
 import ProductDetail from '../components/ProductDetail.jsx';
 import PropTypes from 'prop-types';
@@ -30,6 +31,7 @@ const Container = ({ location }) => (
             <Route component={ ProductArea } exact path="/" />
             <Route component={ ProductDetail } path="/product/:id" />
             <Route component={ CartView } path="/cart" />
+            <Route component={ CheckoutView } path="/checkout" />
           </Switch>
         </section>
       </CSSTransition>
