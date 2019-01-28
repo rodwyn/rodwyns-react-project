@@ -1,0 +1,11 @@
+.form-control {
+  background-color: $gray-1;
+  border: none;
+  border-radius: 0;
+  display: block;
+  font-size: $font-size-base;
+  height: $space-xxxl + $space-md;
+  padding: $space-xl $space-sm;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 100%;
+}
