@@ -1,4 +1,6 @@
+import CustomCheckbox from './CustomCheckbox.jsx';
 import CustomInput from './CustomInput.jsx';
+import CustomTextArea from './CustomTextArea.jsx';
 import React from 'react';
 
 const CheckoutForm = () => {
@@ -24,6 +26,12 @@ const CheckoutForm = () => {
           isRequired
           placeholder="Email"
           type="email" />
+      </div>
+      <div className="col-12">
+        <CustomTextArea placeholder="Leave a comment about your order" />
+      </div>
+      <div className="col-12">
+        <CustomCheckbox isChecked label="Accept terms" />
       </div>
     </div>
   );
