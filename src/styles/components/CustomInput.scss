@@ -1,0 +1,70 @@
+.form-control {
+  background-color: $gray-1;
+  border: none;
+  border-radius: 0;
+  display: block;
+  font-size: $font-size-base;
+  height: $space-xxxl + $space-md;
+  padding: $space-xl $space-sm;
+  width: 100%;
+}
+
+textarea {
+  min-height: $textarea-min-height;
+  overflow: auto;
+  resize: vertical;
+}
+
+.custom-checkbox {
+  display: flex;
+  min-height: $chk-size;
+  padding-left: $space-xxxl;
+  position: relative;
+
+  input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+
+    &:checked ~ label {
+      &::before {
+        background-color: $chk-checked-bg-color;
+        border-color: darken($chk-checked-bg-color, 2%);
+      }
+
+      &::after {
+        align-items: center;
+        color: $white;
+        content: '\f00c';
+        display: flex;
+        font-family: $font-family-icon;
+        font-weight: $font-weight-bold;
+        height: $chk-size;
+        justify-content: center;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: $chk-size;
+      }
+    }
+  }
+
+  label {
+    align-self: flex-end;
+    display: flex;
+
+    &::before {
+      background-color: $gray-1;
+      border: $gray-3 $border-style-base $border-sm;
+      border-radius: 0;
+      content: '';
+      height: $chk-size;
+      left: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: $chk-size;
+    }
+  }
+}
